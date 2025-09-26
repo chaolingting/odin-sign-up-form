@@ -15,29 +15,78 @@
 
         <header>
             <div class="logo">
-                <img src="images/odin-lined.png">
-                <h1>ODIN</h1>
-            </div>    
-                <img src="https://images.unsplash.com/photo-1585699599409-f24bf71f8d9d?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-            
-            
-            
+                <img src="images/odin-lined.png" class="logo-img">
+                <h1 class="logo-text">ODIN</h1>
+            </div>
+            <div class="license"><p>Photo by <a href="https://unsplash.com/@giisilveira">Giovanna Gomes</a> on <a href="https://unsplash.com/photos/brown-tabby-cat-in-close-up-photography-8Eeqh4DvrGQ">Unsplash</a> </p></div>
         </header>
 
+    <div class="form-section">
+        <div class="intro">
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+Sign up now to get started.</p>
+            <p>You <i>know</i> you want to.</p>
+            <br>
+             
+        </div>
+
         <form>
+           <p>Let's do this!</p>
             <fieldset> 
                 <div class="form-row">
-                <legend>Basic Information</legend>
-                <label for="first-name">First Name</label>
-                <input type="text" id="first-name" name="first-name">
-                <label for="last-name">Last Name</label>
-                <input type="text" id="last-name" name="last-name">
+                    <legend class="sr-only">Basic Information</legend>
 
-            </div>
+                    <div class="form-items">
+                        <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" name="first-name" required>
+                    </div>
+
+                    <div class="form-items"> 
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" name="last-name" required>
+                    </div>
+
+                </div>
+
+
+                <div class="form-row mail-phone">
+
+                    <div class="form-items">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-items">
+                        <label for="phone-num">Phone Number</label>
+                        <input type="tel" id="phone-num" name="phone-num" required>    
+                    </div>
+                </div>    
+                
+                <div class="form-row pswd">
+
+                    <div class="form-items">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+
+                    <div class="form-items">
+                        <label for="confrim-pswd">Confirm Password</label>
+                        <input type="password" id="confrim-pswd" name="confrim-pswd" required>    
+                    </div>
+
+                </div>
+
+                <button type="submit">Create Account</button>
                 
             </fieldset>
             
         </form>
+
+        <div class="login">
+            <p>Already have an account?</p><a href="#">Log In</a>
+        </div>
+
+        </div>
     </main>
 </body>
 </html>
